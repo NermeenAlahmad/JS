@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2: Changing colors</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        /* TODO: write JS code here */
+    </script>
+</head>
+<body>
+<div id="mydiv"></div>
+
+<script>
+    
+let box=document.getElementById('mydiv');
+box.style.backgroundColor='blue';
+box.addEventListener('click', change);
+let counter=0;
+
+function change() {
+    if (counter===0) {
+        box.style.backgroundColor='red';
+        counter++
+    } else if (counter ===1) {
+        box.style.backgroundColor='green';
+        counter++
+    } else if (counter ===2) {
+        box.style.backgroundColor='blue';
+        counter++
+} else 
+     counter=0;
+}
+</script>
+
+</body>
+</html>
